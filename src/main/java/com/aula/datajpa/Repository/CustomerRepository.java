@@ -1,8 +1,10 @@
-package com.aula.datajpa;
+package com.aula.datajpa.Repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
+
+import com.aula.datajpa.Model.Customer;
 
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
     

@@ -1,4 +1,4 @@
-package com.aula.datajpa;
+package com.aula.datajpa.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
