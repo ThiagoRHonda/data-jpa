@@ -13,4 +13,6 @@ import com.aula.datajpa.Model.Person;
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long>, CrudRepository<Person, Long> {
     
     List<Person> findByLastName(@Param("name") String name);
+
+    List<Person> findByFistName(@Param("name") String name);
 }
