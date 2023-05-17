@@ -12,14 +12,14 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String fistName, lastName;
+    private String firstName, lastName;
 
-    public String getFistName() {
-        return fistName;
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setFistName(String fistName) {
-        this.fistName = fistName;
+        this.firstName = fistName;
     }
 
     public String getLastName() {
