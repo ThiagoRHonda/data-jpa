@@ -12,6 +12,8 @@ import com.aula.datajpa.Model.Person;
 @RepositoryRestResource(collectionResourceRel = "people", path = "people")
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long>, CrudRepository<Person, Long> {
     
+    Person findById(long id);
+
     List<Person> findByLastName(@Param("name") String name);
 
     List<Person> findByFirstName(@Param("name") String name);
