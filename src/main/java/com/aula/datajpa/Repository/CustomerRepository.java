@@ -10,8 +10,6 @@ import com.aula.datajpa.Model.Customer;
 
 @RepositoryRestResource(collectionResourceRel = "customer", path = "customer")
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
-    
-    //List<Customer> findByLastName(String lastName);
 
     Customer findById(long id);
 
